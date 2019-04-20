@@ -17,6 +17,4 @@
 
     - name: DEBUG
       debug:
-        msg: client id "{{ my_client_id }}"
-        msg: sekret "{{ my_secret }}"
-        msg: subscription_id "{{ my_subscription_id }}"
+        msg: client id "{{ my_client_id }}" / secret "{{ my_secret }}" / subscription_id "{{ my_subscription_id }}"
