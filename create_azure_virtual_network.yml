@@ -15,4 +15,8 @@
         dns_servers: "8.8.8.8"
         state: present
 
-#- name: azure_rm_subnet
+    - name: DEBUG
+      debug:
+        msg: client_id: "{{ my_client_id }}"
+        msg: secret: "{{ my_secret }}"
+        msg: subscription_id: "{{ my_subscription_id }}"
