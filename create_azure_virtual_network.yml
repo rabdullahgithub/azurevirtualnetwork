@@ -6,9 +6,10 @@
   tasks:
     - name: CREATING VIRTUAL NETWORK
       azure_rm_virtualnetwork:
-        ad_user: "{{ my_ad_user }}"
-        password: "{{ my_password }}"
-#        subscription_id: "{{ my_subscription_id }}"
+        subscription_id: “{{ my_subscription_id }}”
+        client_id: “{{ my_client_id }}”
+        secret: “{{ my_secret }}”
+        tenant: “{{ my_tenant }}”
         name: ansiblepoc
         resource_group: MyResourceGroup
         address_prefixes_cidr: "10.1.0.0/16"
