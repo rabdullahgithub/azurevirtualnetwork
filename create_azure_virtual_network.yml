@@ -15,6 +15,6 @@
         dns_servers: "8.8.8.8"
         state: present
 
-    - name: DEBUG
-      debug:
-        msg: my_azure_ad_user: "{{ my_azure_ad_user }}" / my_azure_password: "{{ my_azure_password }}"
+#    - name: DEBUG
+#      debug:
+#        msg: my_azure_ad_user: "{{ my_azure_ad_user }}" / my_azure_password: "{{ my_azure_password }}"
