@@ -5,28 +5,26 @@
   hosts: localhost
 
   tasks:
-    - name: CREATING VIRTUAL NETWORK
-      azure_rm_virtualnetwork:
-        name: poc-vn
-        state: present
-        resource_group: MyResourceGroup
-        subscription_id: "{{ my_subscription_id }}"
-        client_id: "{{ my_client_id }}"
-        secret: "{{ my_secret }}"
-        tenant: "{{ my_tenant }}"
-        address_prefixes_cidr: "10.1.0.0/16"
-        dns_servers: "8.8.8.8"
-      tags: createvn
+  - name: CREATING VIRTUAL NETWORK
+    azure_rm_virtualnetwork:
+      name: poc-vn
+      state: present
+      resource_group: MyResourceGroup
+      subscription_id: "{{ my_subscription_id }}"
+      client_id: "{{ my_client_id }}"
+      secret: "{{ my_secret }}"
+      tenant: "{{ my_tenant }}"
+      address_prefixes_cidr: "10.1.0.0/16"
+      dns_servers: "8.8.8.8"
 
-    - name: CREATING SUBNET
-      azure_rm_subnet:
-        subscription_id: "{{ my_subscription_id }}"
-        client_id: "{{ my_client_id }}"
-        secret: "{{ my_secret }}"
-        tenant: "{{ my_tenant }}"
-        name: poc-sn
-        state: present
-        virtual_network_name: poc-vn
-        resource_group: MyResourceGroup
-        address_prefix_cidr: "10.1.0.0/24"
-      tags: createsn
+  - name: CREATING SUBNET
+    azure_rm_subnet:
+      subscription_id: "{{ my_subscription_id }}"
+      client_id: "{{ my_client_id }}"
+      secret: "{{ my_secret }}"
+      tenant: "{{ my_tenant }}"
+      name: poc-sn
+      state: present
+      virtual_network_name: poc-vn
+      resource_group: MyResourceGroup
+      address_prefix_cidr: "10.1.0.0/24"
