@@ -1,3 +1,4 @@
+---
 - name: BUILDING THE AZURE NETWORK
   connection: local
   gather_facts: no
