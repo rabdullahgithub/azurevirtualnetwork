@@ -3,6 +3,8 @@
   connection: local
   gather_facts: no
   hosts: all
+  vars:
+    ansible_connection: local
 
   tasks:
   - name: CREATING VIRTUAL NETWORK
