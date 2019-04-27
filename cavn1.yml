@@ -2,7 +2,7 @@
 - name: BUILDING THE AZURE NETWORK
   connection: local
   gather_facts: no
-  hosts: localhost
+  hosts: all
 
   tasks:
   - name: CREATING VIRTUAL NETWORK
