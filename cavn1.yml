@@ -30,4 +30,4 @@
       state: present
       virtual_network_name: poc-vn
       resource_group: MyResourceGroup
-      address_prefix_cidr: "10.1.0.0/24"
+      address_prefix_cidr: "{{ my_address_prefix_cidr }}"
