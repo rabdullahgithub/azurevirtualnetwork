@@ -11,7 +11,7 @@
       state: present
       resource_group: MyResourceGroup
       subscription_id: "{{ my_subscription_id }}"
-      client_id: "{{ my_client_id }}"
+#      client_id: "{{ my_client_id }}"
       secret: "{{ my_secret }}"
       tenant: "{{ my_tenant }}"
       address_prefixes_cidr: "10.1.0.0/16"
@@ -20,7 +20,7 @@
   - name: CREATING SUBNET
     azure_rm_subnet:
       subscription_id: "{{ my_subscription_id }}"
-      client_id: "{{ my_client_id }}"
+#      client_id: "{{ my_client_id }}"
       secret: "{{ my_secret }}"
       tenant: "{{ my_tenant }}"
       name: poc-sn
