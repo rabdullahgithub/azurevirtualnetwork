@@ -3,7 +3,7 @@
   connection: local
   gather_facts: no
   hosts: all
-#yuri 
+
   tasks:
   - name: CREATING VIRTUAL NETWORK
     azure_rm_virtualnetwork:
