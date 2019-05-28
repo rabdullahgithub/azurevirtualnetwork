@@ -7,7 +7,7 @@
   tasks:
   - name: CREATING VIRTUAL NETWORK
     azure_rm_virtualnetwork:
-      name: "{{ my_vm_name }}"VN
+      name: "{{ my_vm_name }}-VN"
       state: present
       resource_group: MyResourceGroup
       subscription_id: "{{ my_subscription_id }}"
@@ -23,8 +23,8 @@
       client_id: "{{ my_client_id }}"
       secret: "{{ my_secret }}"
       tenant: "{{ my_tenant }}"
-      name: "{{ my_vm_name }}"SN
+      name: "{{ my_vm_name }}-SN"
       state: present
-      virtual_network_name: "{{ my_vm_name }}"VN
+      virtual_network_name: "{{ my_vm_name }}-VN"
       resource_group: MyResourceGroup
       address_prefix_cidr: "10.1.19.0/24"
