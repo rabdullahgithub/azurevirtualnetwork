@@ -27,4 +27,4 @@
       state: present
       virtual_network_name: "{{ my_vm_name }}-VN"
       resource_group: MyResourceGroup
-      address_prefix_cidr: "10.1.19.0/24"
+      address_prefix_cidr: "10.1.18.0/24"
